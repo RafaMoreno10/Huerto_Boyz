@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tienda de [Nombre del grupo de música]</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+		header{
+			color: #d6e7a0;
+			font-size: 24px;
+			word-spacing: 100px;
+			font-family: 'Bangers', cursive;
+			text-align: center;
+		}
+        body {
+			font-family: 'Bangers', cursive;
+			color: #ffffff;
+			background-color: #030104;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+			letter-spacing: 0.7px;
+        }
+		footer{
+			text-align: center;
+			color: #d6e7a0
+		}
+		
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+		}
+		table th, table td {
+			padding: 10px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}		
+		table th {
+			background-color: #030104;
+            letter-spacing: 0.8px;
+		}
+		tr.base{
+			color: #d6e7a0;
+			font-family: 'Bangers', cursive;
+			font-size: 34px;
+			letter-spacing: 0.9px;
+		}
+		td.precio{
+			font-size: 20px;
+			
+		}
+		td.precio:hover {font-size:200%; color: #d6e7a0;}
+
+		td{
+			text-align: center;
+		}
+		
+		.producto-img {
+			width: 150px;
+			height: 150px;
+			object-fit: cover;
+			margin-right: 20px;
+			float: left;
+		}		
+		.producto {
+			clear: both;
+			margin-bottom: 30px;
+		}
+
+        h1{
+            font-size: 48px;
+            text-align: center;
+        }  
+
+        a:link, a:visited {text-decoration: none;}
+        a.resalta:link {color: #d6e7a0;}
+        a.resalta:visited {color: #d6e7a0;}
+        a.resalta:hover {font-size:150%;}
+
+	</style>
+</head>
+<body>
+
+	<header>
+        <a class="resalta" href="tour.html"> TOUR </a><a class="resalta" href="index.html">PAGINA_PRINCIPAL </a> <a href="musica.html" class="resalta">     MUSICA</a>
+    </header>
+	
+	<main>
+		<h1>Tienda</h1>
+		
+		<table>
+			<thead>
+				<tr class="base">
+					<th>Producto</th>
+					<th>Descripción</th>
+					<th>Precio</th>
+					<th>Imagen</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="producto">
+					<td>    Camiseta<br>"El mejor rostro del mundo"</td>
+					<td>Consta de nuestro integrante JC,<br> en unos de sus momentos mas normales</td>
+					<td class="precio">14.99€</td>
+					<td><img src="images/cami-jc-removebg-preview.png" alt="Camiseta JC" class="producto-img"></td>
+				</tr>
+                <tr class="producto">
+					<td>Mechero HB</td>
+					<td>Que no te lo pinchen bro </td>
+					<td class="precio">4.20€</td>
+					<td><img src="images/mechero-hb-removebg-preview.png" alt="Un Laiter" class="producto-img"></td>
+				</tr>
+                <tr class="producto">
+					<td>Gorra Huerto<br> Boyz</td>
+					<td>Pa que no le de <br> el solecito a mi niño</td>
+					<td class="precio">11.99€</td>
+					<td><img src="images/gorra-hb-removebg-preview.png" alt="Gorrita" class="producto-img"></td>
+				</tr>
+                <tr class="producto">
+					<td>Poster Huerto <br> Boyz</td>
+					<td>Pa que lo cuelgues al lao <br> de la foto del Fary</td>
+					<td class="precio">8.99€</td>
+					<td><img src="images/HuertoBoyzLogo.jpeg" alt="poster" class="producto-img"></td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</main>
+	
+	<footer>
+		<p>Huerto Boyz &copy;2023</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Huerto Boyzzzzz</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        	
+        <link href="popup.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+        
+            @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+            body {
+                width: 100%;
+                height: 100vh;
+                background-repeat: no-repeat;
+                background-color: #000000;
+                background-image: url(images/HuertoBoyzLogo.jpeg);
+                background-size: 900px;
+                background-position: top;
+                font-family: system-ui, sans-serif
+            }
+            
+            .overlay { 
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.7);
+                transition: opacity 500ms;
+                visibility: hidden;
+                opacity: 0;
+                
+            }
+            .overlay:target{
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            div.popupContent{
+                font-family: 'Bangers', cursive;
+                color: #ffffff;
+            
+            }
+            #popupBody{
+                top: 10;
+                width: 60%;
+                height: 75%;
+                padding: 1%;
+
+                border-radius: 15px;
+                box-shadow: 0 0 5px #CCC;
+                background: #030104;
+                position: relative;
+                margin: 6% auto;
+
+                text-align: center;
+                letter-spacing: 0.75px;
+                transition: all 5s ease-in-out;
+            }
+            #cerrar{
+                position: absolute;
+                top: 20px;
+                right: 30px;
+
+                font-size: 30px;
+                font-weight: bold;
+                text-decoration: none;
+                color: #FFF;
+
+                transition: all 200ms;
+            }
+
+            ::-webkit-scrollbar {display: none;}
+
+            a:link, a:visited {text-decoration: none;}        
+            a.resalta:link {color:#ffffff;}
+            a.resalta:hover { color: white;}
+            a.resalta:visited {color:#ffffff;}
+            a.resalta:hover {font-size:150%;}
+            
+            h1{
+                font-family: 'Bangers', cursive;
+                color: #ffffff;
+                font-size: 60px;
+                letter-spacing: 0.9px;
+                text-decoration-line: none;               
+            }
+            h3{
+                font-family: 'Bangers', cursive;
+                color: #d6e7a0;
+                text-align: left;
+                font-size: 26px;
+                text-decoration-line: none;
+            }
+
+            .btn {
+                margin-top: 15px;
+            }
+            .btn:link,.btn:visited {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: rgb(233, 217, 217);
+                padding: 10px 30px;
+                border: 1px solid;
+                border-radius: 1000px;
+                display: inline-block;
+                transition: all .2s;
+                position: relative;
+            }
+            .btn:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+            }
+            .btn:active {
+                transform: translateY(-3px);
+            }
+            .btn::after {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                border-radius: 100px;
+                top: 0;
+                left: 0;
+                position: absolute;
+                z-index: -1;
+                transition: all .3s;
+            }
+            .btn:hover::after {
+                background-color: rgb(0, 238, 255);
+                transform: scaleX(1.4) scaleY(1.5);
+                opacity: 0;
+            }
+
+            form{
+                font-size: 22px;
+            }
+
+            .iconos-sociales {
+                text-align: center;
+            }
+            .iconos-sociales img{ 
+                transition:all 0.5s ease-out; border-radius:50px;
+            }
+            .iconos-sociales img:hover{
+                box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+                transform:translate(0px, -10px); 
+            }
+
+            .linea-enlaces {
+                width: 100%;
+                height: 25vh; 
+            }
+            .mitad {
+                width: 49%;
+                height: 25vh;
+                display:inline-block;
+                text-align: center;
+
+                font-size: 50px;
+
+                font-family: 'Bangers', cursive;
+                color: #ffffff;
+                word-spacing: 300px;
+                text-shadow: 1px 1px 5px #d6e7a0;
+                text-decoration-line: none;
+            }
+
+            .abajo {
+                margin-top:18%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+    
+            <div class="iconos-sociales">
+            <a href="https://www.youtube.com/channel/UCqGqAiEGxHlFMAlbH6w4rKA" target="_blank"><img loading="lazy" alt="Sígueme en YouTube" height="35" width="35" src="https://1.bp.blogspot.com/-h6h-SJbwN7E/YPhkgB-Yl8I/AAAAAAAAA1I/Q9tCbcjDf_kpktwexaaX6Az6qzxkRZpiQCLcBGAsYHQ/s0/youtube-icono-oscuro.png" title=" Sígueme en YouTube "/></a>
+                       
+            <a href="https://www.instagram.com/huertoboyz/" target="_blank"><img loading="lazy" alt="Sígueme en Instagram" height="35" width="35" src="https://1.bp.blogspot.com/-WqOhiV6yq_M/YPhkeb5RT6I/AAAAAAAAA0g/OoYS8E88xukHdeIgFzOYQFMug_UhUgVYACLcBGAsYHQ/s0/Instagram-icono-oscuro.png" title="Sígueme en Instagram"/></a>
+                        
+            <a href="https://www.tiktok.com/@huertoboyz" target="_blank"><img loading="lazy" alt="Sígueme en TikTok" height="35" width="35" src=" https://1.bp.blogspot.com/-rK19lcfnq9c/YPhkfuEwAnI/AAAAAAAAA1U/0ydy_rVmboQtu211UQs7_zMXdMih2LCCwCPcBGAYYCw/s0/tiktok-icono-oscuro.png" title="Sígueme en TikTok"/></a>
+            
+            </div>
+        
+    </header>
+        <div class="linea-enlaces">
+            <div class="mitad"><p><a class="resalta" href="musica.html">MUSICA</a></p></div>
+            <div class="mitad" class="overlay" ><p><a class="resalta" href="#popup">CONTACTO</a></p></div>
+        </div>
+        <div class="linea-enlaces abajo">
+            <div class="mitad"><p><a class="resalta" href="tour.html">TOUR</a></p></div>
+            <div class="mitad"><p><a class="resalta" href="tienda.html">TIENDA</a></p></div>
+        </div>
+        
+        <div id="popup" class="overlay" class="resalta"> 
+            <div id="popupBody">
+                <h1>CONTACTANOS</h1>
+                <h3>Contacto exclusivo para contrataciones con cuatro(4) unidades de 0</h3>
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <form>
+
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label>Telefono</label><br>
+                        <input type="text" id="telefono" name="telefono" required>
+                        <br>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea rows="4" cols="30" id="mensaje" name="mensaje" required></textarea>
+            
+                    </form>
+                    <div class="linea-enlaces">
+                        <a href="#" class="btn" mailto="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php."> Enviar </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="contacto"><p><a class="resalta" href="#popup">CONTACTO </a></p></div>-->
+     
+    </body>
+</html>
